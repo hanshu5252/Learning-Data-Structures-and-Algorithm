@@ -9,7 +9,7 @@ void permutation(string &s, int i){
     for(int j =i;j<s.size();j++){
         swap(s[i],s[j]);
         permutation(s,i+1);
-        swap(s[i],s[j]);
+        swap(s[j],s[i]);
     }
 }
 int main(){

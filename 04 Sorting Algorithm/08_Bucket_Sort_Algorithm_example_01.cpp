@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 #include<vector>
 using namespace std;
 void bucket_sort(float arr[], int size){

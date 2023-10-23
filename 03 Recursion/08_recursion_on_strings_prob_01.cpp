@@ -1,4 +1,4 @@
-// remove all the occurence of 'a' from the string s ="abcax".
+ // remove all the occurence of 'a' from the string s ="abcax".
 #include<iostream>
 using namespace std;
 string f(string &s,int idx, int n){

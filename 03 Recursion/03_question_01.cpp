@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 int sum_digits(int n){
-    if(n>=0 && n<=10 ){
+    if(n>=0 && n<=9){
         return n;
     }
     int ans;

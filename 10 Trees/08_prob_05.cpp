@@ -14,7 +14,7 @@ class Node{
     }
 };
 
-vector<int>   topviewofbinarytree(Node* rootnode){
+vector<int>   bottomviewofbinarytree(Node* rootnode){
    vector<int> ans; 
    if(rootnode == NULL){
     return ans;
@@ -26,7 +26,7 @@ vector<int>   topviewofbinarytree(Node* rootnode){
     int nodes_at_current_level=q.size();
     while(nodes_at_current_level--){
         pair<Node* , int> p = q.front();
-        Node* current_node =  p.first;
+        Node* current_node =  p.first; 
         int current_coloumn = p.second;
         q.pop();
         
@@ -55,7 +55,7 @@ int main(){
     root->left->left = new Node(6);
     root->left->right = new Node(5);
     root->right->right = new Node(11);
-    vector<int> res = topviewofbinarytree(root);
+    vector<int> res = bottomviewofbinarytree(root);
     for(int i =0;i<res.size();i++){
         cout<<res[i]<<" ";
     }

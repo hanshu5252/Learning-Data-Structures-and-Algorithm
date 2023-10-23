@@ -9,7 +9,9 @@ bool f(int num, int *temp){
         (*temp)/=10;
         return (num == last_digit_of_temp);
     }
-
+    // Recursive case:
+    // 1. Recursively call f with the first and last digits removed from num and *temp.
+    // 2. Compare the first and last digits of num and *temp.
     bool result = (f(num/10,temp) and (num%10)==((*temp)%10));
     (*temp)/= 10;
     return result;

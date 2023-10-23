@@ -6,7 +6,7 @@ void merge(int arr[],int l,int mid, int r){
     // create two  temporary arrays
     int a[an];
     int b[bn];
-    for(int i =0;i<an;i++){
+    for(int i =0;i<an;i++){ 
         a[i]=arr[l+i];
     }
     for(int j=0;j<bn;j++){
